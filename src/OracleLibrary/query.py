@@ -26,6 +26,23 @@ class Query(object):
             if cursor:
                 self.connection.rollback()
 
+    def row_count(self, selectStatement):
+        """
+        Uses the input `selectStatement` to query the database and returns the number of rows from the query.\n
+        Example usage:
+        | @{rowCount} | Row Count | SELECT * FROM NLS_DATABASE_PARAMETERS |
+        | Log Many | @{rowCount} |
+        """
+        cursor = None
+        try:
+            cursor = self.connection.cursor()
+            self.__execute_sql(cursor, selectStatement)
+            rowCount = cursor.rowcount()
+            return rowCount
+        finally:
+            if cursor:
+                self.connection.rollback()
+
     def execute_sql_string(self, sqlString):
         """
         Executes the sqlString as SQL commands.\n

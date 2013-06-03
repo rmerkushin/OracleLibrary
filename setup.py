@@ -11,7 +11,8 @@ def main():
 		version 		= __version__, 
 		description 	= "Oracle Database utility library for Robot Framework", 
 		author 			= "Roman Merkushin", 
-		author_email	= "rmerkushin@ya.ru", 
+		author_email	= "rmerkushin@ya.ru",
+		url 			= "https://github.com/rmerkushin/OracleLibrary",
 		package_dir 	= { "" : "src"},
 		packages		= ["OracleLibrary"]
 		)
