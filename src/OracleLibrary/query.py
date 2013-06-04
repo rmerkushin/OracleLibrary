@@ -37,8 +37,8 @@ class Query(object):
         try:
             cursor = self.connection.cursor()
             self.__execute_sql(cursor, selectStatement)
-            rowCount = cursor.rowcount()
-            return rowCount
+            cursor.fetchall()
+            return cursor.rowcount
         finally:
             if cursor:
                 self.connection.rollback()
