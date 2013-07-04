@@ -54,6 +54,6 @@ class Assertion(object):
         If not, then this will throw an AssertionError.
         """
         num_rows = self.row_count(selectStatement)
-        if num_rows != int(numRows.encode("ascii")):
+        if num_rows != int(numRows):
             raise AssertionError("Expected same number of rows to be returned from '%s' "
                                  "than the returned rows of %s" % (selectStatement, num_rows))

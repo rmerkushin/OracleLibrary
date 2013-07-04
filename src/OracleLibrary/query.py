@@ -30,8 +30,8 @@ class Query(object):
         """
         Uses the input `selectStatement` to query the database and returns the number of rows from the query.\n
         Example usage:
-        | @{rowCount} | Row Count | SELECT * FROM NLS_DATABASE_PARAMETERS |
-        | Log Many | @{rowCount} |
+        | ${rowCount} | Row Count | SELECT * FROM NLS_DATABASE_PARAMETERS |
+        | Log Many | ${rowCount} |
         """
         cursor = None
         try:
