@@ -21,6 +21,10 @@ class Query(object):
             cursor = self.connection.cursor()
             self.__execute_sql(cursor, selectStatement)
             allRows = cursor.fetchall()
+            i = 0
+            for x in allRows:
+                allRows[i] = map(lambda s: str(s).decode("utf-8"), x)
+                i += 1
             return allRows
         finally:
             if cursor:
