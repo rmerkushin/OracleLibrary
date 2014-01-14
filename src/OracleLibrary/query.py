@@ -30,6 +30,21 @@ class Query(object):
             if cursor:
                 self.connection.rollback()
 
+    def query_result_as_one_row(self, selectStatement):
+        cursor = None
+        try:
+            cursor = self.connection.cursor()
+            self.__execute_sql(cursor, selectStatement)
+            allRows = cursor.fetchall()
+            result = []
+            for row in allRows:
+                for x in row:
+                    result.append(str(x).decode("utf-8"))
+            return result
+        finally:
+            if cursor:
+                self.connection.rollback()
+
     def row_count(self, selectStatement):
         """
         Uses the input `selectStatement` to query the database and returns the number of rows from the query.\n
