@@ -5,6 +5,7 @@
 import os
 import cx_Oracle
 
+
 class ConnectionManager(object):
     """
     Connection Manager handles the connection & disconnection to the database.

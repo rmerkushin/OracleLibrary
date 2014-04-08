@@ -23,7 +23,7 @@ class Query(object):
             allRows = cursor.fetchall()
             i = 0
             for x in allRows:
-                allRows[i] = map(lambda s: str(s).decode("utf-8"), x)
+                allRows[i] = map(lambda s: str(s).decode("utf-8") if s else '', x)
                 i += 1
             return allRows
         finally:

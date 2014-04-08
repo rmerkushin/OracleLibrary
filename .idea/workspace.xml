@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5359864-02c0-4746-a300-c34e811cbe78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/OracleLibrary.iml" afterPath="$PROJECT_DIR$/.idea/OracleLibrary.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OracleLibrary/connection_manager.py" afterPath="$PROJECT_DIR$/src/OracleLibrary/connection_manager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OracleLibrary/query.py" afterPath="$PROJECT_DIR$/src/OracleLibrary/query.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OracleLibrary.iws" />
@@ -27,10 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="connection_manager.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="connection_manager.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OracleLibrary/connection_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="8" selection-start="1105" selection-end="1131" vertical-scroll-proportion="0.5901456" vertical-offset="0" max-vertical-offset="935">
+            <state line="7" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="59" max-vertical-offset="952">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="query.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/OracleLibrary/query.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="63" selection-start="779" selection-end="779" vertical-scroll-proportion="0.43784994" vertical-offset="34" max-vertical-offset="2176">
               <folding />
             </state>
           </provider>
@@ -54,8 +63,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/OracleLibrary/query.py" />
         <option value="$PROJECT_DIR$/src/OracleLibrary/connection_manager.py" />
+        <option value="$PROJECT_DIR$/src/OracleLibrary/query.py" />
       </list>
     </option>
   </component>
@@ -149,8 +158,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -188,30 +197,40 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/OracleLibrary/query.py">
+    <entry file="file://$PROJECT_DIR$/src/OracleLibrary/connection_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="53" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="2176">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OracleLibrary/query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="53" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="2176">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OracleLibrary/query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="53" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="2176">
+        <state line="7" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="952">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/OracleLibrary/connection_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="8" selection-start="1105" selection-end="1131" vertical-scroll-proportion="0.5901456" vertical-offset="0" max-vertical-offset="935">
+        <state line="32" column="8" selection-start="1105" selection-end="1131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OracleLibrary/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="53" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="2176" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OracleLibrary/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="53" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="2176" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OracleLibrary/connection_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="59" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OracleLibrary/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="63" selection-start="779" selection-end="779" vertical-scroll-proportion="0.43784994" vertical-offset="34" max-vertical-offset="2176">
           <folding />
         </state>
       </provider>
