@@ -121,7 +121,7 @@ class Query(object):
 
     def wait_until_exists_in_database(self, select_statement, timeout=10):
         cursor = self.connection.cursor()
-        for i in range(timeout):
+        for i in range(int(timeout)):
             self.__execute_sql(cursor, select_statement)
             cursor.fetchall()
             if cursor.rowcount != 0:
@@ -131,7 +131,7 @@ class Query(object):
 
     def wait_until_not_exists_in_database(self, select_statement, timeout=10):
         cursor = self.connection.cursor()
-        for i in range(timeout):
+        for i in range(int(timeout)):
             self.__execute_sql(cursor, select_statement)
             cursor.fetchall()
             if cursor.rowcount == 0:
