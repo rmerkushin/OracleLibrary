@@ -35,7 +35,7 @@ class Assertion(object):
             raise AssertionError("Expected to have at least one row from '%s' "
                                  "but got 0 rows." % selectStatement)
 
-    def check_if_not_exists_in_databese(self, selectStatement):
+    def check_if_not_exists_in_database(self, selectStatement):
         """
         This is the negation of `check_if_exists_in_database`.
         Check if no rows would be returned by given the input `selectStatement`.
