@@ -4,7 +4,7 @@
 
 import time
 from robot.api import logger
-
+import cx_Oracle
 
 class Query(object):
     """
@@ -151,6 +151,19 @@ class Query(object):
             table += "</tr>"
         table += "</table>"
         logger.info(table, html=True)
+
+    def call_function(self, functionName, params):
+	cur = None
+	try:
+	    cur = self.connection.cursor()
+	    paramArray = params.split()
+	    resultVar = cur.var(cx_Oracle.NUMBER)
+	    cur.callfunc(functionName, resultVar, paramArray)
+	    self.connection.commit()
+	    return resultVar
+	finally :
+	    if cur :
+		self.connection.rollback()
 
     def __execute_sql(self, cursor, sqlStatement):
         logger.debug("Executing : %s" % sqlStatement)
